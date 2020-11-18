@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/map.css" />
+    <title>Twitter App</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key={{ADD YOUR api KEY HERE}}"
+      defer
+    ></script>
+  </head>
+	<body>	
+    <div id="pageTitle">
+      <h2>Tweet Explorer</h2>
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Search Query</span>
+      </div>
+      <input id="userInput" type="text" value="election" class="form-control" placeholder="search..." aria-label="search" aria-describedby="basic-addon1">
+    </div>    
+    <div id="map"></div>
+    <script src="/javascripts/initMap.js"></script>
+    
+    <div id="searchDetails">
+      <div id="search-text">
+        <div id="geoCoordTag">Geo-Coordinates: 0,0</div>
+        <div id ="searchRadius">Search-radius: 150km</div>    
+      </div>
+    </div>
+	</body>
+</html>

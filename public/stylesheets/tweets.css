@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+#pageTitle {
+    padding-top: 1%;
+    height:10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#title {
+    margin: 0;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 35;
+    color: rgb(29,161,242);
+}
+
+#maplink {
+    font-weight: bold;
+    font-family: monospace;
+    color: rgb(66,66,66);
+}
+
+#maplink:hover {
+    color: dimgray;
+    text-decoration: none;
+}
+
+#twitter-content {
+    height: 88%;
+    display: flex;
+}
+
+#tweetlist {
+    padding: 2%;
+    padding-right: 1%;
+    width: 50%;
+    height: 100%;
+}
+
+.tweet-link {
+    color: black;
+    text-decoration: none;
+}
+
+.tweet-link:hover {
+    color: dimgray;
+    text-decoration: none;
+}
+
+#tweet-item.list-group-item:hover {
+    transition: 0.3s;
+    background-color: rgb(243, 243, 243);
+}
+
+#right-side {
+    padding: 2%;
+    padding-left: 1%;
+    width:  50%;
+    height: 100%;
+}
+
+#graph-block {
+    width: 100%;
+    height: 50%;
+}
+
+#sentiment-graph-2 {
+    width:100%;
+    height:100%;
+}
+
+#sentiment-analysis {
+    padding:4%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    width:100%;
+    height:60%;
+    display: table;
+}
+
+#sentiment-list {
+    color: rgb(189, 189, 189);
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+    background-color: rgb(243, 243, 243);
+    height:100%;
+}
+
+#bottom-right {
+    padding: 4%;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+#trending-at {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    padding: 2%;
+}
+
+#trending {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: rgb(231, 231, 231);        /* color of the tracking area */
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 206, 206);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(231, 231, 231);  /* creates padding around scroll thumb */
+}
+
+#tweetlist-overflow {
+    height: 100%;
+}
+
+#trending-header {
+    margin: 0;
+    padding: 0;
+}
+
+#trending-overflow {
+    height:70%;
+}
+
+#trending-topics {
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+}
+
+#topic {
+    padding:30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#topic-header {
+    padding:30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+#tweets {
+    max-height: 100%;
+}
+
+/* Tweet username */
+#username {
+    display: flex;
+}
+
+.name {
+    padding-right: 10px;
+    font-size: medium; 
+}
+
+.twit-handle {
+    font-size: medium;
+    font-weight: normal;
+    color:rgb(189, 189, 189)
+}
+
+/* Tweet img */
+.mr-3 {
+    border-radius: 100%;
+}
+
+.followers-retweets {
+    font-size: small;
+}

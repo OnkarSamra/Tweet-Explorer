@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/tweets.css" />
+    <title>Twitter App</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+  </head>
+	<body>	
+    <div id="pageTitle">
+      <h1 id="title">Tweet Explorer</h1>
+      <a href="/" id="maplink"><h5>Return to map</h5></a>
+    </div> 
+
+    <div id="twitter-content">
+
+      <div id="tweetlist">
+        <div class="overflow-auto" id="tweetlist-overflow">
+          <ul id="tweets" class="list-group"></ul>
+        </div>
+      </div>
+      <div id="right-side">
+        <div id="graph-block">
+          <canvas id="sentiment-graph-2"></canvas>
+        </div>
+  
+        <div id="trending">
+          <div id="trending-at"></div>
+          <ul id="trending-header">
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="topic-header">  
+              <h6>#</h6><h6>Topics</h6><span> Tweet Vol.</span>
+            </li>
+          </ul>
+          <div class="overflow-auto" id="trending-overflow">
+            <ul id="trending-topics" class="list-group"></ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script type="text/javascript" id="chart-script" src="/javascripts/sentiment2.js" value="3,3,3"></script>
+    <script>{document.getElementById("loading").style.display="none"}</script>
+	</body>
+</html>

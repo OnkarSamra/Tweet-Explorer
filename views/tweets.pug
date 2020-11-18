@@ -1,0 +1,28 @@
+doctype html
+head
+  meta(charset='utf-8')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+  link(rel='stylesheet' type='text/css' href='/stylesheets/tweets.css')
+  title Twitter App
+  script(src='https://polyfill.io/v3/polyfill.min.js?features=default')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js')
+#pageTitle
+  h1#title Twitter App
+  a#maplink(href='/')
+    h5 Return to map
+#twitter-content
+  #tweetlist
+    .overflow-auto
+      ul#tweets.list-group
+  #right-side
+    #sentiment-analysis
+      #sentiment-list
+        | no sentiments yet...
+    #bottom-right
+      #trending
+        #trending-at
+        #trending-overflow.overflow-auto
+          ul#trending-topics.list-group
+      #graph-block
+        canvas#sentiment-graph-2
+script#chart-script(type='text/javascript' src='/javascripts/sentiment2.js')
